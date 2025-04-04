@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Kamble-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand glitch" href="#">Aryan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container text-center">
+            <h1 class="typewriter">Hi, I’m Aryan Kamble</h1>
+            <p class="fade-in">A Web Devloper</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="image-hover">
+                        <img src="https://via.placeholder.com/300" alt="Your Photo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="fade-in">I’m a creator at heart, weaving code into experiences that inspire. From sleek designs to robust functionality, I bring ideas to life.</p>
+                    <a href="Aryan_Resume.pdf" class="btn btn-neon" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="90"><p id="skill_name">HTML5</p></div>
+                <div class="skill-card" data-skill="85"><p id="skill_name">CSS</p></div>
+                <div class="skill-card" data-skill="80"><p id="skill_name">JS</p></div>
+                <div class="skill-card" data-skill="75"><p id="skill_name">PHP</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250" alt="Project 1" class="img-fluid">
+                        <div class="project-overlay">
+                            <h5>E-commerce Galaxy</h5>
+                            <p>A cosmic shopping experience with stellar animations.</p>
+                            <a href="#" class="btn btn-neon">Live Demo</a>
+                            <a href="#" class="btn btn-neon">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="contact.php" method="POST" id="contactForm" class="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                <button type="submit" class="btn btn-neon">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

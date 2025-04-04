@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #213555;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #D8C4B6;
+    z-index: -1;
+}
+
+.navbar {
+    background: #213555;
+    backdrop-filter: blur(10px);
+}
+
+.nav-item a {
+    color: #F5EFE7;
+    text-decoration: none; 
+}
+
+
+
+.navbar-brand.glitch {
+    font-family: 'Orbitron', sans-serif;
+    animation: glitch 2s infinite;
+    color: #F5EFE7;
+}
+
+.section {
+    padding: 120px 0;
+    position: relative;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #213555;
+    /* text-shadow: 0 0 10px #213555; */
+    margin-bottom: 50px;
+}
+
+.typewriter {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    overflow: hidden;
+    border-right: 0.15em solid #F5EFE7;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
+    color: #213555;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 1s;
+    color: #000000;
+}
+
+.image-hover img {
+    transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::after {
+    content: attr(data-skill) '%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3E5879;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: skillFill 5s ease forwards;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #3E5879;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-neon {
+    background: none;
+    border: 2px solid #3E5879;
+    color: #3E5879;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background: #3E5879;
+    color: #000;
+    box-shadow: 0 0 20px #3E5879;
+}
+
+/* Animations */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes skillFill {
+    to { transform: scaleX(1); }
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+}
+
+
+#skill_name {
+    position: absolute;
+    z-index: 999;
+    left: 45%;
+    right: 50%;
+    
+   
+    align-content: center;
+}
+
+#skill_name {
+    position: absolute;
+    z-index: 999;
+    left: 45%;
+    right: 50%;
+    
+   
+    align-content: center;
+}
